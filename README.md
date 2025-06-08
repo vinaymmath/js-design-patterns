@@ -1,2 +1,2 @@
-# js-creational-patterns
-js-creational-patterns
+# js-design-patterns
+js-design-patterns
