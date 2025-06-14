@@ -13,6 +13,10 @@ div{
 .post-wrapper {
     /* border: 1px solid #ececec;
     border-radius: 20px; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 .post{
     margin: 20px 0;
@@ -20,6 +24,14 @@ div{
     border-radius: 5px;
     color: #3D3D3D;
     max-width: 500px;
+}
+.available-routes-list{
+    text-align: left;
+}
+button{
+    background-color: transparent;
+    color: #3D3D3D;
+    border: 1px solid #3D3D3D;;
 }
 
 /* tictactoe game css */

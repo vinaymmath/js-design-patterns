@@ -10,7 +10,7 @@ async function fetchPosts() {
 async function initialize() {
     let response = await fetchPosts();
     let data = await response.json();
-    return RenderHome(data);
+    RenderHome(data);
 }
 
 export default {

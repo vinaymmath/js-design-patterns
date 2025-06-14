@@ -3,13 +3,13 @@ import About from "./views/about.js"
 import TicTacToe from "./controllers/ticTacToeController.js";
 
 const routes = {
-    '#/': InitializeHome.initialize,
+    '#/': TicTacToe.initialize,
     '#/about': About,
-    '#/ticTacToe': TicTacToe.initialize
+    '#/home': InitializeHome.initialize
 }
 
 function notFoundTemplate () {
-    return `
+    document.getElementById("app").innerHTML = `
         <h1>
             404: Not Found
         </h1>
@@ -17,7 +17,7 @@ function notFoundTemplate () {
         <h3>
             Available routes
         </h3>
-        <ul>
+        <ul class="available-routes-list">
             ${Object.keys(routes).map(route => `
                 <li>
                     <a href='${route}'>
