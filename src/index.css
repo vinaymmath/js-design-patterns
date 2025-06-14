@@ -1,0 +1,57 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: #ececec;
+    color: #3D3D3D;
+}
+
+div{
+    text-align: left;
+    padding: 20px;
+}
+.post-wrapper {
+    /* border: 1px solid #ececec;
+    border-radius: 20px; */
+}
+.post{
+    margin: 20px 0;
+    border: 1px solid #3D3D3D;
+    border-radius: 5px;
+    color: #3D3D3D;
+    max-width: 500px;
+}
+
+/* tictactoe game css */
+.game-wrapper{
+    border: 1px solid black;
+    padding: 1px;
+}
+
+.game-cont{
+    width: 300px;
+    /* border: 1px solid black; */
+    color: black;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0px;
+}
+
+.game-state{
+    border: 1px solid black;
+    margin: 1px;
+    flex: 1 1 98px;
+    text-align: center;
+    align-content: center;
+    height: 98px;
+    font-size: 24px;
+    &:hover{
+        cursor: pointer;
+    }
+}
+
+.reset-btn{
+    background-color: transparent;
+    color: #3D3D3D;
+    border: 1px solid #3D3D3D;
+}
